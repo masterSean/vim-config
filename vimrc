@@ -44,8 +44,11 @@ let g:user_emmet_mode='inv'
 let g:user_emmet_leader_key='<C-Z>'
 nnoremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
+""""""""""""""""""""
+"
+"""""""""""""""""""
 let g:tmuxline_powerline_separators = 0
-let g:tmuxline_theme = 'jellybeans'
+let g:tmuxline_theme = 'wombat'
 let g:tmuxline_separators = {
     \ 'left' : '',
     \ 'left_alt': '>',
@@ -95,7 +98,7 @@ if !has('gui_running')
       set t_Co=256
 endif
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'papercolor',
       \ 'component': {
       \     'readonly': '%{&readonly?"x":""}',
       \     'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}' 
@@ -132,7 +135,6 @@ highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
-
 
 "
 "
